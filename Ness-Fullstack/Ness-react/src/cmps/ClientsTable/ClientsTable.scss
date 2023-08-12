@@ -1,0 +1,37 @@
+.clientsTableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+}
+
+.clientsTableButtonsContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    >button {
+        &:active {
+            box-shadow: none;
+        }
+        &:first-child {
+            border-bottom-left-radius: 2px;
+        }
+        border-radius: 0;
+        height: 52px;
+    }
+}
+
+.dataGridBoxContainer {
+    height: 50% !important;
+    width: 47% !important;
+    min-width: 385px !important;
+    position: relative !important;
+}
+
+@media (max-width: 1800px) {
+    .dataGridBoxContainer {
+        width: 80% !important;
+    }
+}
